@@ -8,7 +8,6 @@ static class Program
 {
     private static void Main()
     {
-        Console.Clear();
         var provider = DependencyInjection.ConfigureServices();
         var getMaxService = provider.GetRequiredService<IGetMaxEnumerableTestService>();
         getMaxService.Test();
